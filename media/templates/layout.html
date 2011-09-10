@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta name="author" content="Luka Cvrk (www.solucija.com)" />
+	<meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
+	<link rel="stylesheet" href="/static/css/style.css" type="text/css" />
+	<title>{% block title %} Incidencias {% endblock %}</title>
+</head>
+<body>
+	<div id="content">
+		<div id="logo">
+			<h1><a href="#">Incidencias</a></h1>
+		</div>
+		<ul id="menu">
+            {% block menu %}
+			<li><a href="/">Inicio</a></li>
+			<li><a href="/login">Logeo</a></li>
+			<li><a href="/registro">Registro</a></li>
+			<li><a href="#">About</a></li>
+            {% endblock%}
+		</ul>
+		<div id="intro">
+			<h1>Sistema de Registro de Incidencias</h1>
+			<p>personas preocupadas por le medio ambiente.</p>
+			<div id="login">
+				<p><a href="#">Guest</a> <a href="#">Client</a></p>
+			</div>
+		</div>	
+		<div id="left">
+            {% block left %}
+			<h2>What do we do exactly?</h2>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+			
+			<ul id="leftmenu">
+				<li><a href="#">Complete project outsorcing</a></li>
+				<li><a href="#">Documentation outsorcing</a></li>
+				<li><a href="#">Support outsorcing</a></li>
+			</ul>
+				
+			<div id="notice">
+				<p>If you liked this template, you might like some other Free CSS Templates from <a href="http://www.solucija.com" title="Information Architecture and Web Design">Solucija</a>.</p>
+			</div>		
+            {% endblock %}
+		</div>
+	
+		<div id="right">
+			{% block content %}
+            
+            {% endblock %}
+		</div>
+			
+		<div id="footer">
+			<div id="col1">
+				<p><a href="#">Terms and Conditions</a> &middot; <a href="#">Privacy</a><br />
+				&copy; Copyright 2007 <a href="#">Internet Corporation</a></p>
+			</div>
+			<div id="col2">
+				<p>Address: <strong>Flower street 27</strong><br />
+				Phone: <strong>+xxx (x) xxx xxxx</strong></p>
+			</div>
+			<div id="col3">
+				<p>Design: Luka Cvrk, <a title="Awsome Web Templates" href="http://www.solucija.com/">Solucija</a><br />
+				Valid <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> and <a href="http://validator.w3.org/check?uri=referer">XHTML</a></p>
+			</div>
+		</div>	
+	</div>
+</body>
+</html>l>

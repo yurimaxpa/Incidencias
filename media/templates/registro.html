@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block title %}Registro de Usuarios {% endblock %}
+
+{% block content %}
+
+<div class="register">
+{% if success %}
+    Felicidades {{username}} te as registrado 
+    ahora Logeate
+
+{% else %}
+<h2> registro </h2>
+<form action="/registro" method="post">
+{{form.as_p}}
+<input type="submit" value="reg" name="reg"  />
+</form>
+{% endif %}
+</div>
+
+{% endblock %}

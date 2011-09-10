@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block title %}Incidencias - Pagina principla {% endblock %}
+
+{% block menu %}
+
+            <li><a href="/">Inicio</a></li>
+            {% if isLogin %}
+                <li><a href="/logout">Logout</a></li>
+            {% else %}
+                <li><a href="/login">Logeo</a></li>
+                <li><a href="/registro">Registro</a></li>
+            {% endif %}
+            <li><a href="#">About</a></li>
+{% endblock %}
+
+
+{% block content %}
+
+{% if isLogin %}
+    <p> Bienvenido/a {{user.first_name}} {{ user.last_name }}</p>
+{% endif %}
+
+<div class="incidencias">
+    <p class="titulo"> Incidencias </p>
+    <ul>
+        {% for inc in incidencias %}
+        <li> 
+            <div class="mapa"> X </div>
+            <p class="detalle"> {{ inc.descripcion }} </p>
+            <span class="fecha"> {{ inc.fecha }}</span> 
+            <span class="hora">{{ inc.hora }}</span>
+            <div class="clearb"></div>
+        </li>
+        {% endfor %}
+    </ul>
+
+</div>
+
+
+         <br/>
+         <br/>
+{% endblock %}
